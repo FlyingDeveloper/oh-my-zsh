@@ -139,7 +139,7 @@ prompt_hg() {
 
 # Dir: current working directory
 prompt_dir() {
-  prompt_segment blue white '%~'
+  prompt_segment red white '%~'
 }
 
 # Virtualenv: current working virtualenv
@@ -168,11 +168,11 @@ prompt_status() {
 build_prompt() {
   RETVAL=$?
   prompt_status
-  prompt_virtualenv
+#  prompt_virtualenv
   prompt_context
   prompt_dir
   prompt_git
-  prompt_hg
+#  prompt_hg
   prompt_end
 }
 
